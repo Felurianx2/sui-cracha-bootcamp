@@ -1,3 +1,13 @@
+.crachas-container {
+    margin: 20px 0;
+}
+
+.crachas-container h3 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
 .cracha-card {
     border: 1px solid #ddd;
     padding: 20px;
@@ -6,6 +16,46 @@
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cracha-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.suiscan-button {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.suiscan-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-1px);
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+    .cracha-content {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+    
+    .suiscan-button {
+        align-self: center;
+        width: fit-content;
+    }
 }
 
 .cracha-card.error {

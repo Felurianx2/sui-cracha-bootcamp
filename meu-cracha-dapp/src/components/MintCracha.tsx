@@ -5,7 +5,11 @@ import { Transaction } from '@mysten/sui/transactions';
 import { PACKAGE_ID } from '../config';
 import './MintCracha.css';
 
-export function MintCracha() {
+interface MintCrachaProps {
+    onCrachaCreated?: () => void;
+}
+
+export function MintCracha({ onCrachaCreated }: MintCrachaProps) {
     const account = useCurrentAccount();
     const { mutate: signAndExecute } = useSignAndExecuteTransaction();
     const [nome, setNome] = useState('');
@@ -32,12 +36,16 @@ export function MintCracha() {
                     transaction: txb,
                 },
                 {
-                    onSuccess: (result: any) => {
+                    onSuccess: (result) => {
                         alert(`Crachá criado com sucesso! Digest: ${result.digest}`);
                         setNome('');
                         setIsLoading(false);
+                        // Chama o callback para atualizar a lista
+                        if (onCrachaCreated) {
+                            onCrachaCreated();
+                        }
                     },
-                    onError: (error: any) => {
+                    onError: (error) => {
                         alert(`Erro ao criar crachá: ${error.message}`);
                         setIsLoading(false);
                     }
