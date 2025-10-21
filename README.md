@@ -11,7 +11,7 @@ Um sistema completo de crachás digitais construído na blockchain Sui, desenvol
 - ✅ **Visualização** - Display de crachás existentes
 - ✅ **Blockchain Testnet** - Deploy funcional na rede de teste
 
-## 🏗️ Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 sui-cracha-bootcamp/
@@ -32,13 +32,13 @@ sui-cracha-bootcamp/
 ## 🚀 Deploy Atual
 
 ### 📦 Smart Contract
-- **Package ID:** `0x2556464174da40e048a9dc0ac9c90597c36a29922398ac2e05d7873719d40fcd`
+- **Package ID:** `0xcb106205455d594f89cf7dbf61ac5027378c29fb35da3d7f0d1d3caa8d904049`
 - **Network:** Sui Testnet
 - **Module:** `cracha`
 
 ### 🎫 Crachá de Exemplo
-- **ID:** `0xb8d8679af2b1640e36e5ed76ebc6da4c0b83ec3a8c4c8413d6664140193b1781`
-- **Nome:** f0ntzz
+- **ID:** `0xcfccc8050224d1a4ad4263933780d51819e11290eb48219ea5b2bc2da1399849`
+- **Nome:** Isamar Suarez
 - **Edição:** 2
 
 ## ⚡ Como Executar
@@ -50,7 +50,7 @@ sui-cracha-bootcamp/
 
 ### 1. Clone o repositório
 ```bash
-git clone https://github.com/f0ntz/sui-cracha-bootcamp.git
+git clone https://github.com/Felurianx2/sui-cracha-bootcamp.git
 cd sui-cracha-bootcamp
 ```
 
@@ -132,9 +132,9 @@ struct Cracha has key, store {
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-## 👨‍💻 Autor
+## 👨‍💻 Autores
 
-**f0ntz**
+**f0ntz** & **Isamar Suarez**
 - Desenvolvido durante o Bootcamp SUI
 - [GitHub](https://github.com/f0ntz)
 
